@@ -6,7 +6,7 @@ public class Posicion {
     private char columna;
 
     //Creación método set de filas y columnas
-    public void setfila(int fila) {
+    public void setFila(int fila) {
         if (fila > 0 || fila < 9) {
             this.fila = fila;
         } else {
@@ -14,7 +14,7 @@ public class Posicion {
                     "al 8.");
         }
     }
-    public void setcolumna(char columna) {
+    public void setColumna(char columna) {
         if (columna >= 'a' || columna <= 'h') {
             this.columna = columna;
         } else {
@@ -30,6 +30,12 @@ public class Posicion {
 
     public char getcolumna() {
         return columna;
+    }
+
+    //Creación de constructor
+    private Posicion(int fila,char columna) {
+        setFila(fila);
+        setColumna(columna);
     }
 }
 
