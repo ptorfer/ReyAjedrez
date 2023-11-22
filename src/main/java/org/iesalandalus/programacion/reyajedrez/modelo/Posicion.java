@@ -1,5 +1,6 @@
 package org.iesalandalus.programacion.reyajedrez.modelo;
 
+import java.util.Objects;
 public class Posicion {
     //Creación de atributos
     private int fila;
@@ -42,6 +43,19 @@ public class Posicion {
     public Posicion(Posicion posicion) {
         fila=posicion.fila;
         columna=posicion.columna;
+    }
+
+    //Método equals y hashCode
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Posicion posicion2)) return false;
+        return fila == posicion2.fila && columna == posicion2.columna;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(fila, columna);
     }
 }
 
