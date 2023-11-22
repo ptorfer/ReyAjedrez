@@ -8,6 +8,10 @@ public enum Color {
         this();
         this.CadenaAMostrar = CadenaAMostrar;
     }
+    @Override
+    public String toString() {
+        return CadenaAMostrar;
+    }
 }
 
 
