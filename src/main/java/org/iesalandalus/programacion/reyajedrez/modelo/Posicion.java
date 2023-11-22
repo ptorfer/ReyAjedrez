@@ -57,6 +57,12 @@ public class Posicion {
     public int hashCode() {
         return Objects.hash(fila, columna);
     }
+
+    //Creación toString
+    @Override
+    public String toString() {
+        return String.format("Posicion[fila=%fila, columna=%columna]", this.fila, this.columna);
+    }
 }
 
 
