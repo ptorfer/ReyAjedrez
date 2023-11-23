@@ -24,6 +24,15 @@ public class Rey {
     public Posicion getPosicion() {
         return posicion;
 
+    //constructor por defecto para esta clase que cree un rey blanco en la posición "1e"
+    public Rey(){
+        color = Color.BLANCO;
+        posicion = new Posicion(1,'e');
+    }
+
+
+
+
 }
 
 
