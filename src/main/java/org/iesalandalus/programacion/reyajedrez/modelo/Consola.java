@@ -1,5 +1,7 @@
 package org.iesalandalus.programacion.reyajedrez.modelo;
 
+import org.iesalandalus.programacion.utilidades.Entrada;
+
 public class Consola {
 
     /*constructor para esta clase con su visibilidad adecuada, teniendo en cuenta
@@ -15,4 +17,13 @@ public class Consola {
         System.out.println("4. Salir.");
 
     }
+
+    public static int elegirOpcionMenu (){
+        System.out.println("Elige una opción del menú.");
+        int numeromenu = Entrada.entero();
+        return numeromenu;
+    }
+
+
 }
+
