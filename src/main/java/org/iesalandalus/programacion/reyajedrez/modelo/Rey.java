@@ -28,6 +28,22 @@ public class Rey {
     public Rey(){
         color = Color.BLANCO;
         posicion = new Posicion(1,'e');
+
+    /*constructor para la clase que acepte como parámetro el color y que creará un rey de dicho color
+    cuya posición será "1e" si es blanco o "8e" si es negro*/
+
+    public Rey(){
+        if (color = Color.BLANCO) {
+
+            posicion = new Posicion(1, 'e');
+
+        }
+        else if (color = Color.NEGRO){
+
+            posicion = new Posicion(8,'e');
+
+        }
+
     }
 
 
