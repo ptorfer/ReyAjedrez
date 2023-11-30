@@ -24,6 +24,25 @@ public class Consola {
         return numeromenu;
     }
 
+    public static Color elegirOpcion (){
+        Color color;
+        System.out.println("Elige blanco o negro.");
+
+
+        do {
+            color=Entrada.cadena()
+            }while (color !=Color.BLANCO && color !=Color.NEGRO);
+
+            return color;
+
+
+        }
+
+
+
+
+
+    }
 
 }
 
